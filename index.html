@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>EXO 粉丝博客</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>EXO · Fan Blog</h1>
+    <p>We Are One · EXO</p>
+</header>
+
+<main class="container">
+
+    <!-- 导航 -->
+    <nav class="nav">
+        <button onclick="showSection('about')">关于 EXO</button>
+        <button onclick="showSection('members')">成员介绍</button>
+        <button onclick="showSection('music')">音乐成就</button>
+        <button onclick="showSection('album')">专辑展示</button>
+    </nav>
+
+    <!-- 关于 EXO -->
+    <section id="about" class="content active">
+        <h2>关于 EXO</h2>
+        <p>
+            EXO 是韩国 SM 娱乐于 2012 年推出的男子音乐组合，
+            以完整的世界观设定、高质量音乐作品以及极具感染力的舞台表现，
+            成为 K-POP 具有代表性的男子团体之一。
+        </p>
+    </section>
+
+    <!-- 成员介绍 -->
+    <section id="members" class="content">
+        <h2>成员介绍</h2>
+        <ul class="member-list">
+            <li>SUHO —— 队长 / 主唱</li>
+            <li>XIUMIN —— 副唱 / 舞蹈</li>
+            <li>BAEKHYUN —— 主唱</li>
+            <li>CHEN —— 主唱</li>
+            <li>CHANYEOL —— Rap / Vocal</li>
+            <li>D.O. —— 主唱 / 演员</li>
+            <li>KAI —— 主舞</li>
+            <li>SEHUN —— Rap / 舞蹈</li>
+        </ul>
+    </section>
+
+    <!-- 音乐成就 -->
+    <section id="music" class="content">
+        <h2>音乐成就</h2>
+        <p>
+            EXO 多次获得年度专辑奖项，  
+            多张专辑销量突破百万，  
+            在亚洲及全球范围内拥有极高人气与影响力。
+        </p>
+        <button class="more-btn" onclick="showMessage()">了解更多</button>
+    </section>
+
+    <!-- ⭐ 专辑展示（合并进来） -->
+    <section id="album" class="content">
+        <h2>专辑展示</h2>
+
+        <div class="album-grid">
+
+            <div class="album-card">
+                <h3>XOXO</h3>
+                <p>发行时间：2013</p>
+                <p>代表歌曲：Growl</p>
+            </div>
+
+            <div class="album-card">
+                <h3>EXODUS</h3>
+                <p>发行时间：2015</p>
+                <p>代表歌曲：Call Me Baby</p>
+            </div>
+
+            <div class="album-card">
+                <h3>The War</h3>
+                <p>发行时间：2017</p>
+                <p>代表歌曲：Ko Ko Bop</p>
+            </div>
+
+            <div class="album-card">
+                <h3>DON’T MESS UP MY TEMPO</h3>
+                <p>发行时间：2018</p>
+                <p>代表歌曲：Tempo</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 EXO Fan Blog | Course Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
